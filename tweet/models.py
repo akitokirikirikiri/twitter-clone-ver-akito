@@ -11,9 +11,9 @@ class Post(models.Model):
     dislikes = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.content
+        return self.content[:30 ]
     
     
-    #データベースを作ってくれる
+#データベースを作ってくれる
 # Userに様々な情報が管理されている
 # Create your models here.

@@ -8,4 +8,10 @@ class PostListView(ListView):
     ordering = ('-date_posted')
     paginate_by = 5
 
+class PostCreatteView(CreateView):
+    model = Post
+    fields = ['content']
+    template_name = 'tweet/post_create.html'
+    success_url = '/'
+
 # Create your views here.
